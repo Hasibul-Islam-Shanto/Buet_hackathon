@@ -7,4 +7,5 @@ router
 router
   .route("/songlist")
   .get(phaseOne.songList);
+router.route("/googlesearch").get(phaseOne.googleSearch);
 module.exports = router;

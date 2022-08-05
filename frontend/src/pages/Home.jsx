@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   AppBar,
@@ -61,33 +60,37 @@ const Home = () => {
     <>
       <AppBar sx={{ background: "transparent", boxShadow: "none" }}>
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Stack direction="row">
+          <Stack direction='row'>
             <Typography
-              variant="h6"
+              variant='h6'
               noWrap
-              component="div"
+              component='div'
               sx={{
                 color: "#195DF8",
                 fontFamily: "futura",
                 fontWeight: "bold",
-              }}
-            >
-              AudioMania
+              }}>
+              MyApp
             </Typography>
           </Stack>
 
-          <Stack direction="row" spacing={4}>
+          <Stack direction='row' spacing={4}>
             <NormalButton>
-              <Voice/>
+              <Voice />
             </NormalButton>
             <NormalButton>
-              <Link to="/music" style={{ textDecoration: "none" }}>
+              <Link to='/music' style={{ textDecoration: "none" }}>
                 Musics
               </Link>
             </NormalButton>
             <NormalButton>
-              <Link to="/news" style={{ textDecoration: "none" }}>
+              <Link to='/news' style={{ textDecoration: "none" }}>
                 News
+              </Link>
+            </NormalButton>
+            <NormalButton>
+              <Link to='/map' style={{ textDecoration: "none" }}>
+                Map
               </Link>
             </NormalButton>
             <CustomButton onClick={signInHandler}>SignIn</CustomButton>
@@ -113,8 +116,8 @@ const Home = () => {
         <img src='/voice-assistant-animate.svg' width='600px'></img>
       </Stack> */}
       <Stack
-        direction="row"
-        component="main"
+        direction='row'
+        component='main'
         sx={{
           backgroundColor: "transparent",
           height: "700px",
@@ -122,54 +125,50 @@ const Home = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-        }}
-      >
+        }}>
         <Typography
-          variant="h3"
-          component="div"
+          variant='h3'
+          component='div'
           sx={{
             color: "black",
             fontFamily: "futura",
             fontWeight: "bold",
             marginX: "50px",
             width: "500px",
-          }}
-        >
+          }}>
           Find your assistant
           <p style={{ color: "#195DF8", margin: "0px", padding: "0px" }}>
             at your home
           </p>
         </Typography>
 
-        <img src="voice.gif" height="500px" alt="your image" />
+        <img src='voice.gif' height='500px' alt='your image' />
       </Stack>
       <Typography
-        variant="h5"
+        variant='h5'
         sx={{
           color: "#0C214C",
           textAlign: "center",
           fontWeight: "bold",
-        }}
-      >
+        }}>
         About Our App
       </Typography>
       <Stack
-        direction="row"
+        direction='row'
         spacing={4}
         sx={{
           backgroundColor: "#F2F9F6",
           margin: "40px",
           padding: "20px",
           borderRadius: "15px",
-        }}
-      >
-        {/* <Card
+        }}>
+        <Card
           title='Search your favorite music by voice command'
           icon='Music'
         />
         <Card title='Search News by voice command' icon='News' />
         <Card title='Search easiest route by command' icon='Map' />
-        <Card title='Search anything' icon='Search' /> */}
+        <Card title='Search anything' icon='Search' />
       </Stack>
 
       {/* <Box
@@ -186,6 +185,5 @@ const Home = () => {
     </>
   );
 };
-
 
 export default Home;

@@ -4,7 +4,6 @@ const appError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const { confirmMail } = require("../utils/confirmMail");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
 const cookie = require("cookie");
 exports.createUser = catchAsync(async (req, res, next) => {
   console.log(req.body);

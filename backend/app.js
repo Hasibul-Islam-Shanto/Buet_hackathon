@@ -10,6 +10,7 @@ const appError = require("./utils/appError");
 
 const userRouter = require("./routes/userRouter");
 const speechRouter = require("./routes/speechRouter");
+const phaseOne = require('./routes/phaseOne')
 
 app.use(
   cors({
@@ -23,6 +24,8 @@ if (process.env.NODE_ENV == "development") app.use(morgan("dev"));
 
 app.use("/api/user", userRouter);
 app.use("/api/speechtotext", speechRouter);
+app.use("/api/phaseone",phaseOne);
+
 app.get("/", (req, res) => {
   
   res.status(200).json({

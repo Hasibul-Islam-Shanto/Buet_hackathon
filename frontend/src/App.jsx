@@ -5,9 +5,11 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Music from "./pages/Music";
 import News from "./pages/News";
+
 import SearchPages from "./pages/SearchPages";
 import Voice from "./pages/Voice";
 import Map from "./pages/Map";
+
 const App = () => {
   //console.log(searchText);
   const [searchText, setSearchText] = useState("")
@@ -16,6 +18,7 @@ const App = () => {
       {/* <TextToSpeech searchText={searchText} /> */}
       {/* <Voice setSearchText={setSearchText} /> */}
       <Routes>
+
         <Route path="/" element={<Home />} />
         {/* <Route
           path="/voice"

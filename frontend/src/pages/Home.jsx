@@ -70,9 +70,11 @@ const Home = () => {
                 color: "#195DF8",
                 fontFamily: "futura",
                 fontWeight: "bold",
-              }}
-            >
-              AudioMania
+
+              }}>
+             MyApp
+
+             
             </Typography>
           </Stack>
 

@@ -8,6 +8,7 @@ import News from "./pages/News";
 import SearchPages from "./pages/SearchPages";
 import Voice from "./pages/Voice";
 import Map from "./pages/Map";
+import AccessToekn from "./pages/AccessToekn";
 const App = () => {
   //console.log(searchText);
   const [searchText, setSearchText] = useState("")
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/news" element={<News />} />
         <Route path="/search" element={<SearchPages />} />
         <Route path="/map" element={<Map />} />
+        <Route path="/accesstoken" element={<AccessToekn />} />
       </Routes>
     </>
   );

@@ -50,8 +50,9 @@ const swaggerOptions = {
   },
   apis: ["./routes/noteapi.js"],
 };
-const swaggerDocs = swaggerJSDoc(swaggerOptions);
 cacheMiddleware.attach(app);
+
+const swaggerDocs = swaggerJSDoc(swaggerOptions);
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use("/api", noteapi);
 app.use("/api/user", userRouter);

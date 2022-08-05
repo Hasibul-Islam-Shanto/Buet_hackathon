@@ -18,3 +18,10 @@ export const SearchAll = async(data) =>{
     );
   return res;
 }
+
+export const getAccesstoken = async() =>{
+  const res = await axios.get(
+    `http://localhost:4000/api/phaseone/accesstoken`
+  );
+  return res;
+}

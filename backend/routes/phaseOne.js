@@ -8,4 +8,5 @@ router
   .route("/songlist")
   .get(phaseOne.songList);
 router.route("/googlesearch").get(phaseOne.googleSearch);
+router.route("/accesstoken").get(phaseOne.accesstoken);
 module.exports = router;

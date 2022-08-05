@@ -38,16 +38,14 @@ const News = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-        }}
-      >
+        }}>
         <Typography sx={{ fontSize: 30 }}>All latest news</Typography>
         <Box
           sx={{
             width: "100%",
           }}
-          className="grid_news"
-        >
-          {news.map((ne,i) => (
+          className='grid_news'>
+          {news.map((ne, i) => (
             <Card
               sx={{
                 height: "300px",
@@ -60,14 +58,12 @@ const News = () => {
                 alignItems: "center",
                 marginTop: "2rem",
               }}
-              key={i}
-            >
+              key={i}>
               <CardContent>
                 <Typography
                   sx={{ fontSize: 16 }}
-                  color="text.secondary"
-                  gutterBottom
-                >
+                  color='text.secondary'
+                  gutterBottom>
                   {ne.title}
                 </Typography>
                 {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
@@ -76,20 +72,19 @@ const News = () => {
               </CardContent>
               <CardActions>
                 <Button
-                  size="small"
-                  variant="contained"
+                  size='small'
+                  variant='contained'
                   sx={{
-                    bgcolor: "#65BA84",
+                    bgcolor: "blue",
                     ":hover": { bgcolor: "#65BA84" },
                     fontSize: "1rem",
                     textTransform: "capitalize",
                     padding: ".5rem",
-                    marginBottom:"-10px"
+                    marginBottom: "-10px",
                   }}
-                  onClick={()=>{
-                     window.location.replace(ne.link);
-                  }}
-                >
+                  onClick={() => {
+                    window.location.replace(ne.link);
+                  }}>
                   Read full news
                 </Button>
               </CardActions>

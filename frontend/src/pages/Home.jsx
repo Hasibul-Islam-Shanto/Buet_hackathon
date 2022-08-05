@@ -69,7 +69,7 @@ const Home = () => {
                 fontFamily: "futura",
                 fontWeight: "bold",
               }}>
-              AudioMania
+             MyApp
             </Typography>
           </Stack>
 
